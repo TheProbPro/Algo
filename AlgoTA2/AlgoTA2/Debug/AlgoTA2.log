@@ -1,0 +1,5 @@
+﻿  AlgoTA2.cpp
+C:\Users\nvigg\source\repos\AlgoTA2\AlgoTA2\AlgoTA2.cpp(18,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\nvigg\source\repos\AlgoTA2\AlgoTA2\AlgoTA2.cpp(35,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\nvigg\source\repos\AlgoTA2\AlgoTA2\AlgoTA2.cpp(43,23): warning C4018: '<': signed/unsigned mismatch
+  AlgoTA2.vcxproj -> C:\Users\nvigg\source\repos\AlgoTA2\Debug\AlgoTA2.exe
