@@ -1,17 +1,2 @@
-﻿  Algorithmer.cpp
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(14,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(15,31): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(16,35): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(56,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(58,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(68,18): warning C4018: '>': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(82,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(99,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(107,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(140,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(150,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(158,31): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(159,35): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(169,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\AlgoMethoderOpgaver\Algorithmer.cpp(170,31): warning C4018: '<': signed/unsigned mismatch
+﻿  AlgoMethoderOpgaver.cpp
   AlgoMethoderOpgaver.vcxproj -> C:\Users\nvigg\Documents\GitHub\Algo\AlgoMethoderOpgaver\Debug\AlgoMethoderOpgaver.exe

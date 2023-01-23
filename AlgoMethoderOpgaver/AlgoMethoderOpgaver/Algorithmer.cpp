@@ -224,3 +224,68 @@ int Algorithmer::pythagoranTriplets(int eq)
     }
     return a * b * c;
 }
+
+int Algorithmer::pythagoranTriplets()
+{
+    for (int a = 0; a < 1000; a++) {
+        for (int b = 0; b < 1000; b++) {
+            for (int c = 0; c < 1000; c++) {
+
+                // Look only at Pythagorian tribles
+                if (a < b && b < c) {
+                    if (pow(a, 2) + pow(b, 2) == pow(c, 2)) {
+                        if (a + b + c == 1000) {
+                            std::cout << a << " " << b << " " << c << std::endl;
+                            return a*b*c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return 0;
+}
+
+// Alternativ løsning:
+int Algorithmer::numberOfPossiblePasswords() {
+    int poss = 0;
+    for (int a = 0; a < 9; ++a) {
+        for (int b = 1; b < 9; ++b) {
+            for (int c = 2; c < 9; ++c) {
+                for (int d = 3; d < 9; ++d) {
+                    for (int e = 4; e < 9; ++e) {
+                        for (int f = 5; f < 9; ++f) {
+                            if ((a < b) && (b < c) && (c < d) && (d < e) && (e < f)) {
+                                poss++;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return poss;
+}
+
+bool Algorithmer::anagram(std::string word1, std::string word2)
+{
+    if (word1.length() == word2.length()) {
+        bool letterFound = false;
+        for (int i = 0; i < word1.length(); ++i) {
+            for (int j = 0; j < word1.length(); ++j) {
+                if (word1.at(i) == word2.at(j)) {
+                    letterFound = true;
+                }
+            }
+            if (letterFound == false) {
+                return false;
+            }
+            letterFound = false;
+        }
+    }
+    else {
+        std::cout << "Word length doesnt match!" << std::endl;
+        return false;
+    }
+    return true;
+}

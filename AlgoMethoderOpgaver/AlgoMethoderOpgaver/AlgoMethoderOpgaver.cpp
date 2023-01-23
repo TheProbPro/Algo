@@ -38,8 +38,12 @@ int main()
     */
 
     Algorithmer A;
-    std::cout << A.longestChain(10000) << std::endl;
-    std::cout << A.pythagoranTriplets(1000) << std::endl;
+    //std::cout << A.longestChain(10000) << std::endl;
+    //std::cout << A.pythagoranTriplets(1000) << std::endl;
+    //std::cout << A.numberOfPossiblePasswords() << std::endl;
 
+    std::string word1 = "kat";
+    std::string word2 = "tak";
+    std::cout << A.anagram(word1, word2) << std::endl;
     return 0;
 }

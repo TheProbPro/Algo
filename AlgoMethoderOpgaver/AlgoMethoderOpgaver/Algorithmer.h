@@ -26,6 +26,12 @@ public:
 	int longestChain(int val);
 	// Final exercises opgave 9 pythagoran triplets
 	int pythagoranTriplets(int eq);
+	// Fra anders
+	int pythagoranTriplets();
+	//Final exercises opgave 21 calculate the number of possible passwords
+	int numberOfPossiblePasswords();
+	// Final exercise opgave 26
+	bool anagram(std::string word1, std::string word2);
 
 private:
 	// For maxOccuringWord
