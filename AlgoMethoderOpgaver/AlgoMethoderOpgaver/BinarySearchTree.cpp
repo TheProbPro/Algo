@@ -118,6 +118,22 @@ int BinarySearchTree::internalPathlength()
 	return internalPathlength(root, 0);
 }
 
+int BinarySearchTree::countNodes()
+{
+	if (isEmpty())
+		cout << "Empty tree" << endl;
+	return countNodes(root);
+}
+
+bool BinarySearchTree::minimalHeight()
+{
+	if (isEmpty())
+		cout << "Empty tree" << endl;
+	return minimalHeight(root);
+}
+
+
+
 void BinarySearchTree::insert(const int& x, BinaryNode*& t)
 {
 	if (t == nullptr)
@@ -302,6 +318,37 @@ int BinarySearchTree::height(BinaryNode* t) const
 			return(rheight + 1);
 		}
 	}
+	return 0;
+}
+
+int BinarySearchTree::countNodes(BinaryNode* t) const
+{
+	if (t != nullptr) {
+		int sum = 0;
+		sum += 1;
+		sum += countNodes(t->left);
+		sum += countNodes(t->right);
+		return sum;
+	}
+	return 0;
+}
+
+bool BinarySearchTree::minimalHeight(BinaryNode* t) const
+{
+	int nodes = countNodes(root);
+	int pow2 = 0;
+	for (int i = 0; i <= nodes; ++i) {
+		if (pow(2, i) > nodes) {
+			pow2 = i;
+			break;
+		}
+	}
+	int h = height(root);
+	std::cout << pow2 << " " << h << std::endl;
+	if (pow2 == h) {
+		return true;
+	}
+	return false;
 }
 
 void BinarySearchTree::CurrentLevel(BinaryNode* t, int level) const
@@ -315,3 +362,4 @@ void BinarySearchTree::CurrentLevel(BinaryNode* t, int level) const
 		}
 	}
 }
+

@@ -45,6 +45,8 @@ public:
 	void levelOrderTraversal();
 	// Internal pathlength of Binary tree
 	int internalPathlength();
+	int countNodes();
+	bool minimalHeight();
 
 
 private:
@@ -75,6 +77,8 @@ private:
 	//Used for levelorder traversal
 	int height(BinaryNode* t) const;
 	void CurrentLevel(BinaryNode* t, int level) const;
+	int countNodes(BinaryNode* t) const;
+	bool minimalHeight(BinaryNode* t) const;
 };
 
 #endif

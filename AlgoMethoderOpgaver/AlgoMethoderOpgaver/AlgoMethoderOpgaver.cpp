@@ -14,8 +14,9 @@ int main()
     std::cout << test << std::endl;
     */
 
-    /*
+    
     BinarySearchTree tree;
+    /*
     tree.insert(38);
     tree.insert(32);
     tree.insert(99);
@@ -26,7 +27,23 @@ int main()
     tree.insert(94);
     tree.insert(89);
     tree.insert(95);
+    */
+    /* tree fra portefølgeopgave
+    tree.insert(11);
+    tree.insert(2);
+    tree.insert(13);
+    tree.insert(1);
+    tree.insert(9);
+    tree.insert(57);
+    tree.insert(3);
+    tree.insert(25);
+    tree.insert(90);
+    tree.insert(17);
+    */
     tree.preOrderTraversal();
+    //tree.insert(10);
+    //tree.insert(9);
+    //tree.insert(11);
     std::cout << std::endl;
     tree.inOrderTraversal();
     std::cout << std::endl;
@@ -35,15 +52,16 @@ int main()
     tree.levelOrderTraversal();
     std::cout << std::endl;
     std::cout << tree.internalPathlength() << std::endl;
-    */
+    std::cout << std::endl;
+    std::cout << tree.minimalHeight() << std::endl;;
 
-    Algorithmer A;
+    //Algorithmer A;
     //std::cout << A.longestChain(10000) << std::endl;
     //std::cout << A.pythagoranTriplets(1000) << std::endl;
     //std::cout << A.numberOfPossiblePasswords() << std::endl;
 
-    std::string word1 = "kat";
-    std::string word2 = "tak";
-    std::cout << A.anagram(word1, word2) << std::endl;
+    //std::string word1 = "kat";
+    //std::string word2 = "tak";
+    //std::cout << A.anagram(word1, word2) << std::endl;
     return 0;
 }
