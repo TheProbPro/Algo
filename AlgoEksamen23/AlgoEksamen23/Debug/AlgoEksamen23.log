@@ -1,0 +1,3 @@
+﻿  AlgoEksamen23.cpp
+C:\Users\nvigg\source\repos\AlgoEksamen23\AlgoEksamen23\AlgoEksamen23.cpp(14,17): warning C4804: '>': unsafe use of type 'bool' in operation
+  AlgoEksamen23.vcxproj -> C:\Users\nvigg\source\repos\AlgoEksamen23\Debug\AlgoEksamen23.exe

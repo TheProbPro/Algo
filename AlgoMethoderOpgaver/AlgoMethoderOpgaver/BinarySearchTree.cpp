@@ -132,6 +132,13 @@ bool BinarySearchTree::minimalHeight()
 	return minimalHeight(root);
 }
 
+int BinarySearchTree::numberOfTwigs()
+{
+	if (isEmpty())
+		cout << "Empty tree" << endl;
+	return numberOfTwigs(root);
+}
+
 
 
 void BinarySearchTree::insert(const int& x, BinaryNode*& t)
@@ -274,6 +281,7 @@ void BinarySearchTree::levelOrderTraversal(BinaryNode* t) const
 	if (t != nullptr)
 	{
 		int h = height(root);
+		std::cout << "Height of the tree is: " << h << std::endl;
 		int i;
 		for (i = 1; i <= h; i++)
 			CurrentLevel(root, i);
@@ -349,6 +357,22 @@ bool BinarySearchTree::minimalHeight(BinaryNode* t) const
 		return true;
 	}
 	return false;
+}
+
+int BinarySearchTree::numberOfTwigs(BinaryNode* t) const
+{
+	int sum = 0;
+	if (t != nullptr) {
+		if (t->left != nullptr && t->right == nullptr) {
+			return 1;
+		}
+		else if (t->left == nullptr && t->right != nullptr) {
+			return 1;
+		}
+		sum += numberOfTwigs(t->left);
+		sum += numberOfTwigs(t->right);
+	}
+	return sum;
 }
 
 void BinarySearchTree::CurrentLevel(BinaryNode* t, int level) const

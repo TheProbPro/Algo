@@ -108,6 +108,10 @@ public:
         currentSize = 0;
     }
 
+    void showXthElem(int x) {
+        cout << array[x-1] << endl;
+    }
+
 private:
     int                currentSize;  // Number of elements in heap
     vector<Comparable> array;        // The heap array
